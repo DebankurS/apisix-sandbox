@@ -162,7 +162,7 @@ rbac:
 
 service:
   # -- Apache APISIX service type for user access itself
-  type: NodePort
+  type: LoadBalancer
   # -- Setting how the Service route external traffic
   # If you want to keep the client source IP, you can set this to Local.
 
@@ -224,7 +224,7 @@ control:
     # -- Control annotations
     annotations: {}
     # -- Control service type
-    type: ClusterIP
+    type: LoadBalancer
     # loadBalancerIP: a.b.c.d
     # loadBalancerSourceRanges:
     #   - "143.231.0.0/16"
@@ -354,7 +354,7 @@ apisix:
     # -- Enable Admin API
     enabled: true
     # -- admin service type
-    type: ClusterIP
+    type: LoadBalancer
     # loadBalancerIP: a.b.c.d
     # loadBalancerSourceRanges:
     #   - "143.231.0.0/16"
