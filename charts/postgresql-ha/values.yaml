@@ -1835,7 +1835,7 @@ metrics:
     enabled: true
     ## @param metrics.service.type PostgreSQL Prometheus exporter metrics service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
     ## @param metrics.service.ports.metrics PostgreSQL Prometheus exporter metrics service port
     ##
     ports:
